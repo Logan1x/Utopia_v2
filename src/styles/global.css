@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Questrial&display=swap");
+
+@import url("./utility.css");
+/* @import url("./themes.css");
+@import url("./question.css");
+@import url("./results.css"); */
+
+:root {
+  --color-primary: #10b981;
+  --color-secondary: #111827;
+  --color-tertiary: #6b7280;
+  --color-white: #ffffff;
+  --color-foreground: #fafaf9;
+  --color-background: #111827;
+  --card-bg: #374151;
+  --color-danger: #ff0000;
+}
+
+body {
+  line-height: 1.2;
+}
+
+.container-main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px 1fr 30px;
+  min-height: 100vh;
+  max-width: 1050px;
+  margin: auto;
+  grid-template-areas:
+    "header "
+    "main "
+    "footer ";
+}
+
+.btn {
+  border: none;
+  border-radius: 0.2rem;
+  background-color: var(--color-primary);
+  color: var(--color-foreground);
+  margin: 0.8rem;
+  padding: 0.4rem 0.5rem;
+  cursor: pointer;
+}
+
+.btn-danger {
+  background-color: var(--color-danger);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0rem 1rem;
+  background: var(--color-background);
+  color: var(--color-foreground);
+  grid-area: header;
+}
+
+.nav-title {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.rotate {
+  transform: rotate(45deg) perspective(0);
+}
+
+.nav-title a {
+  color: var(--color-foreground);
+}
+
+.nav-title a:hover {
+  text-decoration: none;
+}
+
+.nav-title .text-sm {
+  font-size: 0.6rem;
+  color: var(--color-tertiary);
+}
+
+.nav-pills > * {
+  margin: 0 0.3rem;
+  color: var(--color-foreground);
+}
+
+.hero {
+  padding: 20px;
+  font-size: 1.5em;
+  text-align: center;
+  grid-area: main;
+  margin: auto 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hero-image {
+  width: 400px;
+  height: auto;
+}
+
+.hero-content {
+  text-align: left;
+}
+
+.hero-title {
+  font-family: "Arvo", serif;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: var(--color-tertiary);
+}
+
+.hero-btns .btn-github {
+  background: #333;
+  color: var(--color-foreground);
+  border: none;
+  padding: 0.7rem 1rem;
+  margin: 0.5rem 0.2rem;
+  border-radius: 3px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.hero-btns .btn-github:hover {
+  opacity: 0.9;
+}
+
+.hero .btn-docs {
+  background: var(--color-primary);
+  color: var(--color-background);
+  border: none;
+  padding: 0.7rem 1rem;
+  margin: 0.5rem 0.2rem;
+  border-radius: 3px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.hero-btns .btn-docs:hover {
+  opacity: 0.85;
+}
+
+footer {
+  text-align: center;
+  grid-area: footer;
+  font-size: 0.9rem;
+}
+
+footer .text-highlight a {
+  color: var(--color-foreground);
+}
+
+/* with sidebar */
+
+.container-doc {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  grid-template-rows: 50px 1fr 30px;
+  height: 100vh;
+  max-width: 950px;
+  margin: auto;
+  grid-template-areas:
+    "header header"
+    "aside main "
+    "footer footer";
+}
+
+/* quiz question */
+
+.question-body {
+  margin: 2rem 0rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .container-doc {
+    margin: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr 30px;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+}
