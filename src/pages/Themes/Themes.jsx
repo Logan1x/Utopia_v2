@@ -1,4 +1,8 @@
 import "./Themes.css";
+import { Link, useParams } from "react-router-dom";
+
+import { QuizCard } from "../../components";
+import { quizData } from "../../models/data";
 
 function Themes() {
   return (
@@ -6,36 +10,11 @@ function Themes() {
       <h2 className="theme-title">Quiz Themes</h2>
       <p className="theme-subtitle">Choose any theme from below cards</p>
       <div className="theme-cards">
-        <div className="card">
-          <img
-            src="https://utopia-quiz.netlify.app/assets/harry-potter.jpg"
-            className="card-img"
-            alt=""
-          />
-          <div className="card-content">
-            <h2 className="card-heading">Potterheads Quiz</h2>
-            <p className="card-text">
-              Wingardium Leviousa your way to the quiz that tests your knowledge
-              on the wizarding world!
-            </p>
-            <button className="btn card-btn modalBtn">Start Now!!</button>
-          </div>
-        </div>
-
-        <div className="card">
-          <img
-            src="https://utopia-quiz.netlify.app/assets/mandalorian.jpg"
-            className="card-img"
-            alt=""
-          />
-          <div className="card-content">
-            <h2 className="card-heading">Mandalorian Quiz</h2>
-            <p className="card-text">
-              Attempting the quiz is the way to meet Grogu and the Mandalorian.
-            </p>
-            <button className="btn card-btn modalBtn">Start Now!!</button>
-          </div>
-        </div>
+        {quizData.map((data) => (
+          <Link to={`/quest/${data.id}/rules`}>
+            <QuizCard key={data.id} {...data} />
+          </Link>
+        ))}
       </div>
       <div className="show-modal modal" id="modal">
         <div className="modal-body">
