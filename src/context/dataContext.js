@@ -1,9 +1,13 @@
-import { createContext, useContext } from "react";
+import { createContext, useContext, useReducer } from "react";
+import { dataReducerFunc, initialState } from "./reducer/dataReducer";
 
 const DataContext = createContext();
 
 const DataProvider = ({ children }) => {
-  return <DataContext.Provider value={{}}>{children}</DataContext.Provider>;
+  const [state, dispatch] = useReducer(dataReducerFunc, initialState);
+  return (
+    <DataContext.Provider value={{ state }}>{children}</DataContext.Provider>
+  );
 };
 
 const useDataContext = () => useContext(DataContext);
