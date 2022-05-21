@@ -1,70 +1,53 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
 
-## Available Scripts
+# Utopia - A Quiz Planet
+  
+Quiz app based on different themes and screen sizes to make a diffrence.
+  
+[![Netlify Status](https://api.netlify.com/api/v1/badges/46a91df1-d813-4dca-a5cc-10eca1c31f8f/deploy-status)](https://app.netlify.com/sites/utopia-quiz/deploys)
 
-In the project directory, you can run:
+**Website url : [https://utopia-quiz.netlify.app/](https://utopia-project.netlify.app/)**
 
-### `npm start`
+This project is made out of HTML,CSS, and ReactJS and **if you love to contribute please make a new issue and let me know.**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+</div>  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tech Stack
+- Html5
+- Css3
+- ReactJS
+- React Context API
+- UseReducer Hook
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Screens
+- Homepage
+- Quiz Themes Page
+- Rules Page
+- Quest Page
+- Results Page
 
-### `npm run build`
+<div align="center">
+        
+        
+## Website Preview
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<p align="center">
+        
+![utopiaHomapge](https://user-images.githubusercontent.com/10944610/154802511-533b4ab1-ef35-4e90-a1c8-630bc8a8e8b3.png)
+![screely-1645276816699](https://user-images.githubusercontent.com/10944610/154802585-5472b96c-f7df-48a1-a668-92d6fb50b869.png)
+![rules](https://user-images.githubusercontent.com/10944610/154802590-df81bed2-1ddc-4bfc-82d7-ef70d81cfb36.png)
+![quizQuestion](https://user-images.githubusercontent.com/10944610/154802594-902e6c89-8566-4695-af35-ea81b20f8ba0.png)
+![results](https://user-images.githubusercontent.com/10944610/154802640-5b9f1027-e3d0-4736-b4f0-c620d1267c64.png)
+</p>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### This Project was made with help of these contributors
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<p align="center">
+        <a href="https://github.com/logan1x/utopia/graphs/contributors">
+                <img src="https://contributors-img.web.app/image?repo=logan1x/utopia" />
+        </a>
+</p>
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+</div>  
