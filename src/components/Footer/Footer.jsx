@@ -5,7 +5,7 @@ function Footer() {
     <footer>
       Developed By{" "}
       <span className="text-highlight">
-        <a href="#">Khushal Sharma</a>
+        <a href="https://github.com/Logan1x/Utopia_v2">Khushal Sharma</a>
       </span>
     </footer>
   );
