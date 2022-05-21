@@ -10,25 +10,28 @@ function Quest() {
   const navigate = useNavigate();
   const { name, questions } = quizData.find((quest) => quest.id === qid);
 
-  const [activeOption, setActiveOption] = useState(0);
+  const [activeOption, setActiveOption] = useState();
   const [selectedOption, setSelectedOption] = useState("");
 
   const [index, setIndex] = useState(0);
   const quest = questions[index];
 
   const validateAnswer = (quesIndex) => {
-    console.log(
-      `real ans:  ${questions[quesIndex].answer}, your ans:  ${selectedOption}`
-    );
     if (questions[quesIndex].answer === selectedOption) {
       dispatch({ type: "SET_SCORE", payload: state.score + 5 });
+      setActiveOption("");
     } else if (selectedOption !== "") {
       dispatch({ type: "SET_SCORE", payload: state.score - 2 });
+      setActiveOption("");
     }
   };
 
   const sbmtQuiz = (quesIndex) => {
     validateAnswer(quesIndex);
+    dispatch({
+      type: "SET_QIDOPTIONS",
+      payload: [...state.qidOptions, selectedOption],
+    });
     navigate("/results");
   };
 
@@ -58,8 +61,6 @@ function Quest() {
     setActiveOption(index);
     setSelectedOption(option);
   };
-
-  // console.log(state.score);
 
   return (
     <main className="quiz-container">
