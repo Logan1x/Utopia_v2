@@ -12,7 +12,6 @@ function Result() {
       (quest) => quest.id === state.qid
     );
   } else if (state.qid === null) {
-    console.log("error");
     setError("You haven't attempted the quiz yet");
   }
 
