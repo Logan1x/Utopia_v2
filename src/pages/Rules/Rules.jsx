@@ -1,13 +1,20 @@
 import { Link, useParams } from "react-router-dom";
+import { useDataContext } from "../../context/dataContext";
 
 function Rules() {
   const { qid } = useParams();
+  const { dispatch } = useDataContext();
 
+  const clearReducer = () => {
+    dispatch({ type: "SET_SCORE", payload: 0 });
+    dispatch({ type: "SET_QID", payload: null });
+    dispatch({ type: "SET_QIDOPTIONS", payload: [] });
+  };
   return (
-    <div class="modal" id="modal">
-      <div class="modal-body">
+    <div className="modal" id="modal">
+      <div className="modal-body">
         <h2>There are some rules, you should follow before you go wandering</h2>
-        <div class="model-text-left">
+        <div className="model-text-left">
           <p>1. You can only attempt the quiz once.</p>
           <p>2. You can't go back to the quiz after you've attempted it.</p>
           <p>
@@ -17,12 +24,14 @@ function Rules() {
         </div>
 
         <div>
-          <button class="btn card-btn">
-            <Link to={`/quest/${qid}`}>Start the quiz?</Link>
-          </button>
-          <button class="btn card-btn btn-danger" id="closeModal">
-            <Link to={`/themes`}>Go Back</Link>
-          </button>
+          <Link to={`/quest/${qid}`} onClick={clearReducer}>
+            <button className="btn card-btn">Start the quiz?</button>
+          </Link>
+          <Link to={`/themes`}>
+            <button className="btn card-btn btn-danger" id="closeModal">
+              Go Back
+            </button>
+          </Link>
         </div>
       </div>
     </div>

@@ -1,7 +1,7 @@
 const quizData = [
   {
     id: "dd4f7738-f811-4bd1-bb2b-f6913f28c92a",
-    name: "Harry Potter Quiz",
+    name: "Potterheads Quiz",
     category: "Harry Potter",
     difficulty: "easy",
     imgUrl: "https://utopia-quiz.netlify.app/assets/harry-potter.jpg",
@@ -16,21 +16,15 @@ const quizData = [
       },
       {
         id: 2,
-        question: "Where was Dumbledore born?",
-        answer: "Mould-on-the-Wold",
-        options: [
-          "Mould-on-the-Wold",
-          "Fold-on-the-Wold",
-          "Wizard-on-the-Wold",
-          "Told-on-the-Wold",
-        ],
+        question: "What spell did Harry use to kill Lord Voldemort?",
+        answer: "Expelliarmus",
+        options: ["Expelliarmus", "Expecto Patronum", "Avada Kedavra", "Accio"],
       },
       {
         id: 3,
-        question:
-          "Dumbledore grew up in the same town as Godric Gryffindor and Harry Potter. What is it called?",
-        answer: "Godrics Hollow",
-        options: ["Hawkins", "Godrics Hollow", "Star Hollow", "Jump city"],
+        question: "Which element is associated with Hufflepuff?",
+        answer: "Earth",
+        options: ["Fire", "Earth", "Air", "Water"],
       },
       {
         id: 4,
@@ -40,9 +34,14 @@ const quizData = [
       },
       {
         id: 5,
-        question: "Which sport is Dumbledore keen on playing?",
-        answer: "Mould-on-the-Wold",
-        options: ["Archery", "Darts", "Five side-a ball", "10-pin bowling"],
+        question: "what is the name of the fifth book?",
+        answer: "Harry Potter and the Order of the Phoenix",
+        options: [
+          "Harry Potter and the Goblet of Fire",
+          "Harry Potter and the Order of the Phoenix",
+          "Harry Potter and the Half-Blood Prince",
+          "Harry Potter and the Deathly Hallows",
+        ],
       },
     ],
   },
@@ -57,14 +56,38 @@ const quizData = [
     questions: [
       {
         id: 1,
-        question: "What is the name of the",
-        answer: "harry potter",
+        question: "Which pesky aliens mistake the Razor Crest for spare parts?",
+        answer: "Jawas",
+        options: ["Transdoshans", "Ugnaughts", "Jawas", "Tusken Raiders"],
+      },
+      {
+        id: 2,
+        question: "What is the name of the Mandalorian?",
+        answer: "Darth Maul",
+        options: ["Darth Maul", "Darth Sidious", "Darth Vader", "Darth Mual"],
+      },
+      {
+        id: 3,
+        question: "What is the name of the Mandalorian's ship?",
+        answer: "The Death Star",
         options: [
-          "harry potter",
-          "harry potter",
-          "harry potter",
-          "harry potter",
+          "The Death Star",
+          "The Life Star",
+          "The Earth Star",
+          "The Wind Star",
         ],
+      },
+      {
+        id: 4,
+        question: "What is the main job of R2-D2?",
+        answer: "Mechanic",
+        options: ["Fighter pilot", "Mechanic", "Nurse"],
+      },
+      {
+        id: 5,
+        question: "Which leading man rejects the role of Han Solo?",
+        answer: "Al Pacino",
+        options: ["Mel Gibson", "Al Pacino", "Dustin Hoffman", "John Hopkins"],
       },
     ],
   },

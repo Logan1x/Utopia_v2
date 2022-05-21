@@ -11,7 +11,7 @@ function Themes() {
       <p className="theme-subtitle">Choose any theme from below cards</p>
       <div className="theme-cards">
         {quizData.map((data) => (
-          <Link to={`/quest/${data.id}/rules`}>
+          <Link to={`/quest/${data.id}/rules`} key={data.id}>
             <QuizCard key={data.id} {...data} />
           </Link>
         ))}

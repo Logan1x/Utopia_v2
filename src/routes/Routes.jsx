@@ -1,4 +1,4 @@
-import { Home, Themes, Quest, Rules } from "../pages";
+import { Home, Themes, Quest, Rules, Result } from "../pages";
 
 import { Routes, Route } from "react-router-dom";
 
@@ -9,6 +9,7 @@ function Endpoints() {
       <Route path="/themes" element={<Themes />} />
       <Route path="/quest/:qid" element={<Quest />} />
       <Route path="/quest/:qid/rules" element={<Rules />} />
+      <Route path="/results" element={<Result />} />
     </Routes>
   );
 }
