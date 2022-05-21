@@ -1,5 +1,6 @@
 import { Link, useParams } from "react-router-dom";
 import { useDataContext } from "../../context/dataContext";
+import "./Rules.css";
 
 function Rules() {
   const { qid } = useParams();
@@ -23,7 +24,7 @@ function Rules() {
           </p>
         </div>
 
-        <div>
+        <div className="rules-next-btns">
           <Link to={`/quest/${qid}`} onClick={clearReducer}>
             <button className="btn card-btn">Start the quiz?</button>
           </Link>

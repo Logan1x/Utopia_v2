@@ -1,0 +1,21 @@
+.notFound-Wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.notFound-Wrapper h1{
+    font-family: "Questrial", sans-serif;
+    font-weight: 100;
+    margin: 0;
+}
+
+.text-highlight > a{
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+
+.text-highlight> a:hover{
+    text-decoration: none;
+}
