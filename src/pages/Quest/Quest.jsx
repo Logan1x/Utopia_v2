@@ -17,9 +17,6 @@ function Quest() {
   const quest = questions[index];
 
   const validateAnswer = (quesIndex) => {
-    console.log(
-      `real ans:  ${questions[quesIndex].answer}, your ans:  ${selectedOption}`
-    );
     if (questions[quesIndex].answer === selectedOption) {
       dispatch({ type: "SET_SCORE", payload: state.score + 5 });
     } else if (selectedOption !== "") {
