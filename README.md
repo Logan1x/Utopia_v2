@@ -3,7 +3,7 @@
 
 # Utopia - A Quiz Planet
   
-Quiz app based on different themes and screen sizes to make a diffrence.
+Quiz app based on different themes and screen sizes to make a difference.
   
 [![Netlify Status](https://api.netlify.com/api/v1/badges/46a91df1-d813-4dca-a5cc-10eca1c31f8f/deploy-status)](https://app.netlify.com/sites/utopia-quiz/deploys)
 
